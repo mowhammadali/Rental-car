@@ -1,0 +1,51 @@
+@import "./Variables";
+@import "./mixins";
+
+.container{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 92%;
+    padding: 30px 40px;
+    margin: 0 auto;
+    background-color: $PrimaryColor;
+            @include flexBox(flex , space-between , center);
+    flex-direction: column;
+    gap: 30px;
+    transform: translate(50% , -50%);
+
+    h1{
+        text-align: center
+    }
+
+    .buttons{
+        @include flexBox(flex , space-between , center);
+        gap: 30px;
+
+        @include query(576){
+            flex-direction: column;
+        }
+    }
+
+    button{
+        @include flexBox(flex , space-between , center);
+        gap: 5px;
+        padding: 10px 20px;
+        background-color: rgb(12, 12, 12);
+        border: none;
+        cursor: pointer;
+
+        @include query(576){
+            width: 200px;
+            justify-content: center;
+        }
+    }
+
+    p{
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+

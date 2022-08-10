@@ -1,0 +1,56 @@
+.card {
+  height: 100%;
+  width: 320px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-top: 8px solid #3a59b6;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 5px 14px 1px rgba(0, 0, 0, 0.43);
+  box-shadow: 4px 5px 14px 1px rgba(0, 0, 0, 0.43);
+}
+@media (max-width: 1200px) {
+  .card {
+    width: 260px;
+  }
+}
+@media (max-width: 992px) {
+  .card {
+    width: 320px;
+  }
+}
+@media (max-width: 576px) {
+  .card {
+    width: 260px;
+  }
+}
+.card img {
+  width: 130px;
+}
+@media (max-width: 1200px) {
+  .card img {
+    width: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .card img {
+    width: 130px;
+  }
+}
+@media (max-width: 992px) {
+  .card img {
+    width: 100px;
+  }
+}
+.card h1 {
+  font-size: 22px;
+  color: #222222;
+}
+.card p {
+  color: #222222;
+  text-align: left;
+}
+
+/*# sourceMappingURL=Card.module.css.map */

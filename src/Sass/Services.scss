@@ -1,0 +1,61 @@
+@import "./Variables";
+@import "./mixins";
+
+.container{
+    position: relative;
+    height: 520px;
+    padding: 60px;
+    margin-bottom: 300px;
+    background-color: $PrimaryTextColor;
+    @include flexBox(flex , flex-start , center);
+    flex-direction: column;
+    gap: 30px;
+
+    @include query(992){
+        height: auto;
+        margin-bottom: 130px;
+    }
+
+    h4{
+        color: $PrimaryColor;
+        font-size: 20px;
+    }
+
+    h1{
+        color: #fff;
+        font-size: 42px;
+        text-align: center;
+    }
+
+    p{
+        color: #fff;
+        text-align: center;
+    }
+}
+
+.cards{
+    height: 320px;
+    width: 100%;
+    padding: 0 50px;
+    position: absolute;
+    bottom: 0;
+    @include flexBox(flex , space-between , center);
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+
+    @include query(992){
+        height: auto;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 30px;
+        position: unset;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+}
+}

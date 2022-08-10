@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 50px;
+}
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=Banner.module.css.map */

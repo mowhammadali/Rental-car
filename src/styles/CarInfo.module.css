@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px 0;
+}
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    gap: 100px;
+  }
+}
+.container .header {
+  text-align: center;
+}
+.container .header h2 {
+  font-family: cursive;
+}
+.container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+.container .renaultIcon {
+  width: 70px;
+  height: 70px;
+}
+@media (max-width: 768px) {
+  .container .renaultIcon {
+    width: 50px;
+    height: 50px;
+  }
+}
+.container .renault {
+  width: 60%;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .container .renault {
+    width: 75%;
+  }
+}
+@media (max-width: 576px) {
+  .container .renault {
+    width: 85%;
+  }
+}
+.container p {
+  text-align: center;
+}
+.container .more {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+  cursor: pointer;
+}
+.container .about {
+  font-weight: bold;
+}
+.container .arrow {
+  width: 30px;
+  height: 30px;
+  animation: arrow 3s ease-in-out infinite;
+}
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.container span {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.39);
+}
+.container span img {
+  width: 26px;
+  height: 26px;
+}
+
+/*# sourceMappingURL=CarInfo.module.css.map */

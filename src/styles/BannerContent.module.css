@@ -1,0 +1,88 @@
+.container {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 0;
+}
+@media (max-width: 992px) {
+  .container {
+    width: 65%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+.container h1 {
+  font-size: 40px;
+  color: #222222;
+}
+.container p {
+  font-size: 18px;
+  color: #222222;
+}
+.container .buttons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.container button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: none;
+  padding: 20px 35px;
+  background-color: #3a59b6;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .container button {
+    gap: 15px;
+    padding: 20px 20px;
+  }
+}
+.container button p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .container button p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .container button p {
+    font-size: 12px;
+  }
+}
+.container button img {
+  width: 22px;
+}
+@media (max-width: 400px) {
+  .container button img {
+    width: 15px;
+  }
+}
+.container a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #222222;
+}
+@media (max-width: 1200px) {
+  .container a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .container a {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=BannerContent.module.css.map */

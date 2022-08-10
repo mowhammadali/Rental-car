@@ -1,0 +1,33 @@
+@import "./Variables";
+@import "./mixins";
+
+.container{
+    @include flexBox(flex , space-between , center);
+    padding: 10px 50px;
+
+    @include query(992){
+        padding: 60px 50px 40px 50px;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    @include query(768){
+        display: grid;
+        grid-template-columns: 80px 80px;
+        grid-template-rows: repeat(4 , 1fr);
+        justify-items: center;
+        justify-content: center;
+        gap: 80px;
+
+        img{
+            width: 80px;
+            height: 80px;
+        }
+
+        a{
+            display: inline-block;
+        }
+    }
+}

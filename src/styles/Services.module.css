@@ -1,0 +1,63 @@
+.container {
+  position: relative;
+  height: 520px;
+  padding: 60px;
+  margin-bottom: 300px;
+  background-color: #222222;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 992px) {
+  .container {
+    height: auto;
+    margin-bottom: 130px;
+  }
+}
+.container h4 {
+  color: #3a59b6;
+  font-size: 20px;
+}
+.container h1 {
+  color: #fff;
+  font-size: 42px;
+  text-align: center;
+}
+.container p {
+  color: #fff;
+  text-align: center;
+}
+
+.cards {
+  height: 320px;
+  width: 100%;
+  padding: 0 50px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+}
+@media (max-width: 992px) {
+  .cards {
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+    position: unset;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+}
+
+/*# sourceMappingURL=Services.module.css.map */

@@ -1,0 +1,105 @@
+@import "./Variables";
+@import "./mixins";
+
+.container{
+
+    @include flexBox(flex , space-around , center);
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px 0;
+
+    @include query(768){
+        height: auto;
+        gap: 100px;
+    }
+
+    .header{
+        text-align: center;
+
+        h2{
+            font-family: cursive;
+        }
+    }
+
+    .content{
+        @include flexBox(flex , center , center);
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .renaultIcon{
+        width: 70px;
+        height: 70px;
+
+        @include query(768){
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .renault{
+        width: 60%;
+        margin-bottom: 10px;
+
+        @include query(768){
+            width: 75%;
+        }
+
+        @include query(576){
+            width: 85%;
+        }
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .more{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2px;
+        cursor: pointer;
+    }
+
+    .about{
+        font-weight: bold;
+    }
+
+    .arrow{
+        width: 30px;
+        height: 30px;
+        animation: arrow 3s ease-in-out infinite;
+    }
+
+    @keyframes arrow {
+        0%{
+            transform: translateY(0);
+        }
+
+        50%{
+            transform: translateY(15px);
+        }
+
+        100%{
+            transform: translateY(0);
+        }
+    }
+
+    span{
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        padding: 6px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        -webkit-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.39); 
+        box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.39);
+
+        img{
+            width: 26px;
+            height: 26px;
+        }
+
+    }
+}

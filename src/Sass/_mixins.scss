@@ -1,0 +1,37 @@
+@mixin flexBox($display , $justifyContent , $alignItem) {
+    display: $display;
+    justify-content: $justifyContent;
+    align-items: $alignItem;
+}
+
+@mixin query($width){
+    @if($width == 1200){
+        @media(max-width:1200px){
+            @content;
+        }
+    }
+
+    @if($width == 992){
+        @media(max-width:992px){
+            @content;
+        }
+    }
+
+    @if($width == 768){
+        @media(max-width:768px){
+            @content;
+        }
+    }
+
+    @if($width == 576){
+        @media(max-width:576px){
+            @content;
+        }
+    }
+
+    @if($width == 400){
+        @media(max-width:400px){
+            @content;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import "./Variables";
+@import "./mixins";
+
+.container{
+    @include flexBox(flex , flex-end , flex-end);
+    width: 66%;
+
+    img{
+        width: 80%;
+        cursor: pointer;
+    }
+
+    @include query(992){
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 360px;
+
+        img{
+            width: 80%;
+        }
+    }
+
+    @include query(768){
+        height: 270px;
+    }
+}

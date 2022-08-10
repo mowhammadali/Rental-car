@@ -1,0 +1,11 @@
+@import "./Variables";
+@import "./mixins";
+
+.container{
+    @include flexBox(flex , space-between , center);
+    padding: 0 0 0 50px;
+
+    @include query(992){
+        flex-direction: column;
+    }
+}

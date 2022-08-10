@@ -1,0 +1,91 @@
+@import "./Variables";
+@import "./mixins";
+
+.container{
+    @include flexBox(flex , space-between , flex-end);
+    position: relative;
+    padding: 30px 50px;
+    height: 220px;
+    background-color: $PrimaryTextColor;
+
+    @include query(768){
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+        height: 360px;
+    }
+
+    @include query(576){
+        height: 400px;
+    }
+
+    @include query(400){
+        height: 420px;
+    }
+
+    h1{
+        color: #fff;
+
+        @include query(992){
+            font-size: 26px;
+        }
+    }
+
+    .menu ul{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        @include query(576){
+            gap: 15px;
+        }
+    }
+
+    .menu li{
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+
+        @include query(992){
+            font-size: 16px;
+        }
+
+        @include query(576){
+            font-size: 13px;
+        }
+
+        @include query(400){
+            font-size: 10px;
+        }
+    }
+
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include query(992){
+            gap: 15px;
+        }
+    }
+
+    .socialMedia img{
+        cursor: pointer;
+
+        @include query(992){
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .socialMedia img:nth-child(4){
+        width: 40px;
+        height: 40px;
+
+        @include query(992){
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

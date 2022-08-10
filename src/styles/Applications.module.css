@@ -1,0 +1,52 @@
+.container {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 92%;
+  padding: 30px 40px;
+  margin: 0 auto;
+  background-color: #3a59b6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  transform: translate(50%, -50%);
+}
+.container h1 {
+  text-align: center;
+}
+.container .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 576px) {
+  .container .buttons {
+    flex-direction: column;
+  }
+}
+.container button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 20px;
+  background-color: rgb(12, 12, 12);
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .container button {
+    width: 200px;
+    justify-content: center;
+  }
+}
+.container p {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+/*# sourceMappingURL=Applications.module.css.map */

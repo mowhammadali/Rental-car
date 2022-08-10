@@ -1,0 +1,54 @@
+@import "./Variables";
+@import "./mixins";
+
+.card{
+    height: 100%;
+    width: 320px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-top: 8px solid $PrimaryColor;
+    background-color: #ffffff;
+    -webkit-box-shadow: 4px 5px 14px 1px rgba(0,0,0,0.43); 
+    box-shadow: 4px 5px 14px 1px rgba(0,0,0,0.43);
+
+    @include query(1200){
+        width: 260px;
+    }
+
+    @include query(992){
+        width: 320px;
+    }
+
+    @include query(576){
+        width: 260px;
+    }
+
+    img{
+        width: 130px;
+
+        @include query(1200){
+            width: 100px;
+        }
+
+        @include query(992){
+            width: 130px;
+        }
+
+        @include query(992){
+            width: 100px;
+        }
+    }
+
+    h1{
+        font-size: 22px;
+        color: $PrimaryTextColor;
+    }
+
+    p{
+        color: $PrimaryTextColor;
+        text-align: left;
+    }
+}

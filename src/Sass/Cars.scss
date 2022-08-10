@@ -1,0 +1,70 @@
+@import "./Variables";
+@import "./mixins";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 350px;
+
+    h3{
+        color: $PrimaryColor;
+        font-size: 22px;
+    }
+
+    h1{
+        font-size: 44px;
+        color: $PrimaryTextColor;
+
+        @include query(576){
+            font-size: 32px;
+        }
+    }
+
+    .seeCars{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 15px 25px;
+        background-color: $PrimaryColor;
+        border: none;
+        cursor: pointer;
+    }
+
+    p{
+        font-weight: bold;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    img{
+        width: 20px;
+    }
+}
+
+.cars{
+    width: 100%;
+    height: auto;
+    margin: 50px 0 70px 0;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    gap: 50px;
+    justify-content: center;
+    justify-items: center;
+
+    @include query(1200){
+        column-gap: 30px;
+    }
+
+    @include query(992){
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: repeat(3 , 1fr);
+        column-gap: 50px;
+    }
+
+    @include query(768){
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}

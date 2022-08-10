@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+  margin: 40px 0 20px 0;
+}
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+.container .image {
+  width: 45%;
+}
+@media (max-width: 992px) {
+  .container .image {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .container .image {
+    width: 85%;
+  }
+}
+.container .image img {
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  .container .image img {
+    height: 500px;
+    width: 100%;
+  }
+}
+
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 992px) {
+  .content {
+    width: 85%;
+    gap: 25px;
+  }
+}
+.content a {
+  color: #3a59b6;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: underline;
+}
+@media (max-width: 576px) {
+  .content a {
+    font-size: 20px;
+  }
+}
+.content h1 {
+  font-size: 42px;
+  color: #222222;
+}
+@media (max-width: 576px) {
+  .content h1 {
+    font-size: 30px;
+  }
+}
+.content p {
+  font-size: 20px;
+  color: #222222;
+}
+@media (max-width: 576px) {
+  .content p {
+    font-size: 16px;
+  }
+}
+.content button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #3a59b6;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .content button {
+    width: 180px;
+  }
+}
+.content button p {
+  color: #fff;
+}
+.content button img {
+  width: 20px;
+  height: 20px;
+}
+
+/*# sourceMappingURL=Collection.module.css.map */

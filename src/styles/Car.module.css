@@ -1,0 +1,69 @@
+.car {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 4px 5px 14px 1px rgba(0, 0, 0, 0.43);
+  box-shadow: 4px 5px 14px 1px rgba(0, 0, 0, 0.43);
+}
+.car .carImg {
+  width: 100%;
+  height: 230px;
+}
+@media (max-width: 768px) {
+  .car .carImg {
+    height: 350px;
+  }
+}
+@media (max-width: 576px) {
+  .car .carImg {
+    height: 230px;
+  }
+}
+@media (max-width: 400px) {
+  .car .carImg {
+    height: 180px;
+  }
+}
+.car .price {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.car .dollar {
+  width: 30px;
+}
+.car h4 {
+  font-size: 20px;
+  color: #222222;
+}
+.car h3 {
+  font-size: 22px;
+  color: #222222;
+}
+.car button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background-color: #a7a7a7;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.car button:hover {
+  background-color: #3a59b6;
+}
+.car .phone {
+  width: 20px;
+}
+.car p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f3f3f3;
+}
+
+/*# sourceMappingURL=Car.module.css.map */

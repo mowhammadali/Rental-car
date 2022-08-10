@@ -1,0 +1,183 @@
+@import "./Variables";
+@import "./mixins";
+
+#navbar{
+    @include flexBox(flex , space-between , center);
+    padding: 16px 50px;
+    background-color: $PrimatyBgColor;
+
+    .brand{
+        @include query(768){
+            display: none;
+        }
+    }
+
+    .brand h1{
+        font-size: 28px;
+        color: $PrimaryTextColor;
+
+        @include query(992){
+            font-size: 22px;
+        }
+    }
+
+    ul{
+        display: flex;
+        gap: 40px;
+
+        @include query(1200){
+            gap: 30px;
+        }
+
+        @include query(992){
+            gap: 25px;
+        }
+    }
+
+    button{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 8px 16px;
+        background-color: #0e0e0e;
+        cursor: pointer;
+
+        @include query(992){
+            gap: 10px;
+            padding: 8px 12px;
+        }
+    }
+
+    img{
+        width: 20px;
+        height: 20px;
+
+        @include query(992){
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    p{
+        font-size: 16px;
+        color: $PrimatyBgColor;
+
+        @include query(992){
+            font-size: 14px;
+        }
+
+        @include query(400){
+            font-size: 12px;
+        }
+    }
+
+    .circledMenu{
+        display: none;
+
+        @include query(768){
+            display: inline-block;
+        }
+
+        img{
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+#navbar ul li{
+    font-size: 20px;
+    cursor: pointer;
+    color: $PrimaryTextColor;
+    transition: color .4s ease-in-out;
+
+    @include query(1200){
+        font-size: 18px;
+    }
+
+    @include query(992){
+        font-size: 15px;
+    }
+
+    @include query(768){
+        font-size: 20px;
+        color: #ebebeb;
+    }
+    
+    &:hover{
+        color: #5a5a5a;
+
+        @include query(768){
+            color: #3ad491;
+        }
+    }
+}
+
+.menu{
+    
+
+    h1{
+        display: none;
+    }
+
+    @include query(768){
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 300px;
+        height: 100vh;
+        background-color: $PrimaryColor;
+
+        transform: translate(-100%);
+        -webkit-transform: translate(-100%);
+        -moz-transform: translate(-100%);
+        -ms-transform: translate(-100%);
+        -o-transform: translate(-100%);
+
+        transition: transform .8s ease-in-out;
+        -webkit-transition: transform .8s ease-in-out;
+        -moz-transition: transform .8s ease-in-out;
+        -ms-transition: transform .8s ease-in-out;
+        -o-transition: transform .8s ease-in-out;
+
+        h1{
+            display: inline-block;
+            color: #fff;
+        }
+
+        ul{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @include query(400){
+        width: 230px;
+    }
+}
+
+.menu.active{
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+}
+
+.close{
+    display: none;
+
+    @include query(768){
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+}
