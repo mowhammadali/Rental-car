@@ -9,8 +9,13 @@ import Services from './Components/Services';
 import Cars from './Components/Cars';
 import Footer from './Components/Footer';
 import CarInfo from './Components/CarInfo';
+import axios from 'axios';
 
 const App = () => {
+    React.useEffect(() => {
+        axios.get('/posts')
+        .then(res => console.log(res))
+    } , [])
     return (
         <>
             <Navbar />
